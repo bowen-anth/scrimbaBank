@@ -1,0 +1,16 @@
+.logo-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.bestbank-h1 {
+  color: #000;
+  font-family: Overpass, sans-serif;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}

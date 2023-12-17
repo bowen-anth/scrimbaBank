@@ -5,8 +5,11 @@ export default function Nav() {
     return (
         <>
             <header>
-                <nav>
-                    <h1>I am H1</h1>
+                <div className="logo-container">
+                    <img src="../src/assets/bank-logo.svg" /> <h1 className="bestbank-h1">BestBank</h1>
+                </div>
+                <nav className="nav-container">
+                    
                 </nav>
             </header>
         </>
