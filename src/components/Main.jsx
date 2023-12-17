@@ -1,5 +1,8 @@
 import React, { useState } from "react"
 import accounts from "./data/accountsData.jsx"
+import renderAccountItems from "./utils/functions.jsx"
+import renderContent from "./utils/functions.jsx"
+
 
 export default function Main() {
 
@@ -8,19 +11,16 @@ export default function Main() {
         expenses: false,
         savings: false
     })
+
 console.log(selected)
+
     return (
         <>
             <main>
                 <div className="button-container">
                     <button>Pay</button> <button>Transfer</button>
                 </div>
-                <div className="accounts-container">
-                    {!selected.mainAccount && 
-                    <div className="accounts">
-                        <h2>Accounts</h2>
-                    </div>
-                    }
+                    {renderAccountItems()}
                     {selected.mainAccount &&
                     <div className="accounts-spendings-container"> 
                         <div className="accounts">
@@ -31,7 +31,6 @@ console.log(selected)
                         </div>
                     </div>
                     }
-                </div>
             </main>
         </>
     )
