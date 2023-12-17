@@ -1,42 +1,74 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.logo-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.bestbank-h1 {
+  color: #000;
+  font-family: Overpass, sans-serif;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.nav-container {
+  display: flex;
+  display: block;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.nav-container > ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-family: Inter;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 400;
+  background: #E5E7EB;
+  height: 4.125rem;
+  /* width: 90rem; */
+  align-self: center;
+  margin: auto;
+  align-items: center;
+}
+
+.home-li {
+font-family: Inter, sans-serif;
+font-size: 1.5625rem;
+font-style: normal;
+font-weight: 700;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-container > button {
+  width: 14.20469rem;
+  height: 4.8125rem;
+  flex-shrink: 0;
+  background-color: #FFF;
+  color: #000;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  font-family: Inter;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 3px solid #111827;
+  border-radius: 50px;
 }
