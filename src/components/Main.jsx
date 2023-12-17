@@ -1,18 +1,16 @@
 import React, { useState } from "react"
-import accounts from "./data/accountsData.jsx"
-import renderAccountItems from "./utils/functions.jsx"
-import renderContent from "./utils/functions.jsx"
-
+import { accounts } from "./data/accountsData"
+import { renderContent } from "./utils/functions"
 
 export default function Main() {
 
-    const [selected, setSelected] = useState({
-        mainAccount: false,
+    const [selectedState, setSelectedState] = useState({
+        mainAccount: true,
         expenses: false,
         savings: false
     })
 
-console.log(selected)
+console.log(selectedState)
 
     return (
         <>
@@ -20,17 +18,7 @@ console.log(selected)
                 <div className="button-container">
                     <button>Pay</button> <button>Transfer</button>
                 </div>
-                    {renderAccountItems()}
-                    {selected.mainAccount &&
-                    <div className="accounts-spendings-container"> 
-                        <div className="accounts">
-                            <h2>Accounts</h2>
-                        </div>
-                        <div className="spendings">
-                            <h2>Spendings</h2>
-                        </div>
-                    </div>
-                    }
+                    {renderContent(selectedState, setSelectedState)}
             </main>
         </>
     )

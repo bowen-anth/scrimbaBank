@@ -1,4 +1,4 @@
-const accounts = [
+export const accounts = [
     {
         id: 1,
         title: "Main Account",
@@ -52,5 +52,3 @@ const accounts = [
         spendings: []
     }
 ]
-
-export default accounts

@@ -86,3 +86,31 @@ font-weight: 700;
   display: flex;
   justify-content: center;
 }
+
+#account-button-form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  width: 26rem;
+  height: 7.1875rem;
+  flex-shrink: 0;
+  border-radius: 0.9375rem;
+  border: 5px solid #111827;
+  background: #FFF;
+}
+
+input[type="checkbox"]:checked + label {
+  background: #D1D5DB;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
