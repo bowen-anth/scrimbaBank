@@ -47,8 +47,13 @@ font-style: normal;
 font-weight: 700;
 }
 
-nav li {
+.nav-container li {
   list-style-type: none;
+}
+
+.nav-container li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .button-container {
@@ -71,4 +76,13 @@ nav li {
   line-height: normal;
   border: 3px solid #111827;
   border-radius: 50px;
+}
+
+.button-container > button:hover {
+  cursor: pointer;
+}
+
+.accounts-spendings-container {
+  display: flex;
+  justify-content: center;
 }
