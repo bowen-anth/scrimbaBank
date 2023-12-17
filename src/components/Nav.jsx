@@ -5,11 +5,17 @@ export default function Nav() {
     return (
         <>
             <header>
-                <div className="logo-container">
-                    <img src="../src/assets/bank-logo.svg" /> <h1 className="bestbank-h1">BestBank</h1>
-                </div>
                 <nav className="nav-container">
-                    
+                    <div className="logo-container">
+                        <img src="../src/assets/bank-logo.svg" /> <h1 className="bestbank-h1">ScrimBank</h1>
+                    </div>
+                    <ul>
+                            <li className="home-li">Home</li>
+                            <li>Payment</li>
+                            <li>Savings</li>
+                            <li>Financing</li>
+                            <li>Stocks</li>
+                    </ul>
                 </nav>
             </header>
         </>

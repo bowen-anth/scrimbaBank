@@ -4,11 +4,17 @@ import accounts from "./data/accountsData.jsx"
 export default function Main() {
     return (
         <>
-            <header>
-                <nav>
-                    {console.log(accounts)}
-                </nav>
-            </header>
+            <main>
+                <div className="button-container">
+                    <button>Pay</button> <button>Transfer</button>
+                </div>
+                <div className="accounts">
+
+                </div>
+                <div clasName="spendings">
+
+                </div>
+            </main>
         </>
     )
 }

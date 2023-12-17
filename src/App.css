@@ -14,3 +14,61 @@
   font-weight: 900;
   line-height: normal;
 }
+
+.nav-container {
+  display: flex;
+  display: block;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.nav-container > ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-family: Inter;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 400;
+  background: #E5E7EB;
+  height: 4.125rem;
+  /* width: 90rem; */
+  align-self: center;
+  margin: auto;
+  align-items: center;
+}
+
+.home-li {
+font-family: Inter, sans-serif;
+font-size: 1.5625rem;
+font-style: normal;
+font-weight: 700;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-container > button {
+  width: 14.20469rem;
+  height: 4.8125rem;
+  flex-shrink: 0;
+  background-color: #FFF;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 3px solid #111827;
+  border-radius: 50px;
+}
