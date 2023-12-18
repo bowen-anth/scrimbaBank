@@ -94,9 +94,13 @@ export default function Body() {
                                     <div key={account.id}>
                                         <h2>{account.title}</h2>
                                         {account.spendings.map((spending) => (
-                                            <div key={spending.category} className="spending-bar"> 
-                                                <div className="bar-label">{spending.category}</div> 
-                                                <div className="bar" style={{ width: `${spending.spent}px` }}></div>
+                                            <div key={spending.category} className="spending-bar">
+                                                <div className="spending-span-container">
+                                                    <span>{spending.category}: </span>
+                                                    <span>${spending.spent}</span>
+                                                </div>
+                                                <div className="bar" style={{ width: `${spending.spent / 20}%` }}>
+                                                </div>
                                             </div>
                                         ))}
                                     </div>

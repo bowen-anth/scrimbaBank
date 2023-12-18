@@ -139,21 +139,39 @@ input[type="radio"]:checked + label {
 /* css for spendings, expenses, savings */
 
 .spendings-bars-container {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
-.spending-bar {
+.spending-span-container {
+  margin-left: 1rem;
+  margin-bottom: 2px;
+}
+
+.spendings-container h2 {
+  margin-bottom: 1rem;
+}
+
+/* .spending-bar {
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
-}
-
-.bar-label {
-  margin-right: 8px;
-}
+  margin-bottom: 1.5rem;
+} */
 
 .bar {
-  height: 20px; /* Adjust the height as needed */
-  background-color: #3498db; /* Example color, you can customize */
+  display: flex;
+  height: 3.0625rem;
+  background-color: #E11D1D;
+  margin: 0.5rem 1rem;
+  align-self: center;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.bar > span {
+  margin: 2rem;
 }
