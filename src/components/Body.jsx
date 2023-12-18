@@ -8,7 +8,7 @@ export default function Body() {
         expenses: false,
         savings: false
     })
-
+    console.log(selectedState)
     console.log(accounts)
 
     const handleChange = (event) => {
@@ -44,7 +44,7 @@ export default function Body() {
 
     return (
         <>
-                    <div className="button-container">
+                <div className="button-container">
                     <button>Pay</button> <button>Transfer</button>
                 </div>
             {/* Accounts Container: Start */}
@@ -60,7 +60,8 @@ export default function Body() {
                                         name="radio"
                                         onChange={handleChange}
                                         value={selectedState.mainAccount}
-                                        checked
+                                        defaultChecked={selectedState.mainAccount}
+                                        
                                     />
                                     <label htmlFor="mainAccount">Main Account <span>${commafy(accounts[0]?.balance)}</span></label>
                                     <input 
