@@ -84,13 +84,17 @@ font-weight: 700;
 
 .accounts-container {
   width: 40%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+}
+
+.accounts-item-container {
+  display: flex;
+  justify-content: left;
 }
 
 .accounts-spendings-container {
   display: flex;
   justify-content: center;
-  align-self: center;
 }
 
 #account-button-form {
@@ -98,12 +102,16 @@ font-weight: 700;
   flex-direction: column;
 }
 
+.button-container {
+  margin-bottom: 3rem;
+}
+
 input[type="radio"] {
   display: none;
 }
 
 input[type="radio"] + label {
-  width: 26rem;
+  width: 90%;
   height: 7.1875rem;
   flex-shrink: 0;
   border-radius: 0.9375rem;
@@ -116,6 +124,7 @@ input[type="radio"] + label {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  margin: 1rem 0;
 }
 
 input[type="radio"]:checked + label {
@@ -132,7 +141,7 @@ input[type="radio"]:checked + label {
 
 .right-container {
   /* justify-content: left; */
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 40%;
 }
 
@@ -144,7 +153,7 @@ input[type="radio"]:checked + label {
 }
 
 .spending-span-container {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   margin-bottom: 2px;
 }
 
@@ -162,7 +171,7 @@ input[type="radio"]:checked + label {
   display: flex;
   height: 3.0625rem;
   background-color: #E11D1D;
-  margin: 0.5rem 1rem;
+  margin: 0.75rem 0;
   align-self: center;
   justify-content: space-between;
   align-items: center;
