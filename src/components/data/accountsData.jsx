@@ -1,7 +1,7 @@
 export const accounts = [
     {
         id: 1,
-        title: "Main Account",
+        title: "Spendings",
         balance: "6700.56",
         spendings: [
             {

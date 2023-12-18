@@ -85,6 +85,7 @@ font-weight: 700;
 .accounts-spendings-container {
   display: flex;
   justify-content: center;
+  align-self: center;
 }
 
 #account-button-form {
@@ -103,6 +104,9 @@ input[type="checkbox"] + label {
   border-radius: 0.9375rem;
   border: 5px solid #111827;
   background: #FFF;
+  font-family: Inter;
+  font-size: 1.5625rem;
+  font-weight: 700;
 }
 
 input[type="checkbox"]:checked + label {
@@ -110,7 +114,14 @@ input[type="checkbox"]:checked + label {
 }
 
 .main-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+.right-container {
+  /* justify-content: left; */
+  border: 2px solid red;
 }
