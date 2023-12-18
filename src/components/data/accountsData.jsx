@@ -49,6 +49,19 @@ export const accounts = [
         id: 3,
         title: "Savings",
         balance: "36500.12",
-        spendings: []
+        savings: [
+            {
+                category: "Schwab",
+                saved: "19.99"
+            },
+            {
+                category: "Robinhood",
+                saved: "14.99"
+            },
+            {
+                category: "BTC",
+                saved: "9.99"
+            }
+        ]
     }
 ]

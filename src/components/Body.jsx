@@ -12,23 +12,13 @@ export default function Body() {
     console.log(accounts)
 
     const handleChange = (event) => {
-        const {name, value, type, checked} = event.target
-        setSelectedState(prevState => ({
-            ...prevState,
-            [name]: type === "checkbox" ? checked : value
-        }))
-        // setTotal((prevTotal) => {
-        //     if (checked) {
-        //         switch (name) {
-        //             case 'washCar':
-        //                 return prevTotal + 10;
-        //             case 'mowLawn':
-        //                 return prevTotal + 20;
-        //             case 'pullWeeds':
-        //                 return prevTotal + 30;
-        //             default:
-        //                 return prevTotal;
-        //         }
+        const { value } = event.target;
+
+        setSelectedState({
+          mainAccount: value === 'mainAccount',
+          expenses: value === 'expenses',
+          savings: value === 'savings',
+        });
     }
 // ghostoy from https://stackoverflow.com/questions/6784894/add-commas-or-spaces-to-group-every-three-digits
     function commafy( num ) {
@@ -57,27 +47,32 @@ export default function Body() {
                                     <input 
                                         type="radio" 
                                         id="mainAccount"
-                                        name="radio"
+                                        name="accountType"
                                         onChange={handleChange}
-                                        value={selectedState.mainAccount}
-                                        defaultChecked={selectedState.mainAccount}
+                                        // value={selectedState.mainAccount}
+                                        value="mainAccount"
+                                        checked={selectedState.mainAccount}
                                         
                                     />
                                     <label htmlFor="mainAccount">Main Account <span>${commafy(accounts[0]?.balance)}</span></label>
                                     <input 
                                         type="radio" 
                                         id="expenses"
-                                        name="radio"
+                                        name="accountType"
                                         onChange={handleChange}
-                                        value={selectedState.expenses}
+                                        checked={selectedState.expenses}
+                                        // value={selectedState.expenses}
+                                        value="expenses"
                                     />
                                     <label htmlFor="expenses">Expenses <span>${commafy(accounts[1]?.balance)}</span></label>
                                     <input 
                                         type="radio" 
                                         id="savings"
-                                        name="radio"
+                                        name="accountType"
                                         onChange={handleChange}
-                                        value={selectedState.savings}
+                                        checked={selectedState.savings}
+                                        // value={selectedState.savings}
+                                        value="savings"
                                     />
                                 <label htmlFor="savings">Savings <span>${commafy(accounts[2]?.balance)}</span></label>
                         </form>

@@ -59,7 +59,7 @@ font-weight: 700;
 .button-container {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 2rem;
 }
 
 .button-container > button {
@@ -170,7 +170,7 @@ input[type="radio"]:checked + label {
 .bar {
   display: flex;
   height: 3.0625rem;
-  background-color: #E11D1D;
+  background-color: #D1D5DB;
   margin: 0.75rem 0;
   align-self: center;
   justify-content: space-between;
