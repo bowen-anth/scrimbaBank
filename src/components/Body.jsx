@@ -1,7 +1,14 @@
-// import React from "react"
-import { accounts } from "../data/accountsData.jsx"
+import React, { useState } from "react"
+import { accounts } from "./data/accountsData.jsx"
 
-export const renderContent = (selectedState, setSelectedState) => {
+export default function Body() {
+
+    const [selectedState, setSelectedState] = useState({
+        mainAccount: true,
+        expenses: false,
+        savings: false
+    })
+
     console.log(accounts)
 
     const handleChange = (event) => {
@@ -37,33 +44,37 @@ export const renderContent = (selectedState, setSelectedState) => {
 
     return (
         <>
+                    <div className="button-container">
+                    <button>Pay</button> <button>Transfer</button>
+                </div>
             {/* Accounts Container: Start */}
             <div className="main-container">
+
                 <div className="accounts">
                     <h2>Accounts</h2>
                     <div className="accounts-item-container">
                         <form id="account-button-form">
                                     <input 
-                                        type="checkbox" 
+                                        type="radio" 
                                         id="mainAccount"
-                                        name="mainAccount"
+                                        name="radio"
                                         onChange={handleChange}
                                         value={selectedState.mainAccount}
-                                        checked={selectedState.mainAccount}
+                                        checked
                                     />
                                     <label htmlFor="mainAccount">Main Account <span>${commafy(accounts[0]?.balance)}</span></label>
                                     <input 
-                                        type="checkbox" 
+                                        type="radio" 
                                         id="expenses"
-                                        name="expenses"
+                                        name="radio"
                                         onChange={handleChange}
                                         value={selectedState.expenses}
                                     />
                                     <label htmlFor="expenses">Expenses <span>${commafy(accounts[1]?.balance)}</span></label>
                                     <input 
-                                        type="checkbox" 
+                                        type="radio" 
                                         id="savings"
-                                        name="savings"
+                                        name="radio"
                                         onChange={handleChange}
                                         value={selectedState.savings}
                                     />

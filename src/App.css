@@ -93,11 +93,11 @@ font-weight: 700;
   flex-direction: column;
 }
 
-input[type="checkbox"] {
+input[type="radio"] {
   display: none;
 }
 
-input[type="checkbox"] + label {
+input[type="radio"] + label {
   width: 26rem;
   height: 7.1875rem;
   flex-shrink: 0;
@@ -107,9 +107,13 @@ input[type="checkbox"] + label {
   font-family: Inter;
   font-size: 1.5625rem;
   font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
-input[type="checkbox"]:checked + label {
+input[type="radio"]:checked + label {
   background: #D1D5DB;
 }
 
