@@ -82,6 +82,11 @@ font-weight: 700;
   cursor: pointer;
 }
 
+.accounts-container {
+  width: 40%;
+  border: 2px solid red;
+}
+
 .accounts-spendings-container {
   display: flex;
   justify-content: center;
@@ -128,4 +133,27 @@ input[type="radio"]:checked + label {
 .right-container {
   /* justify-content: left; */
   border: 2px solid red;
+  width: 40%;
+}
+
+/* css for spendings, expenses, savings */
+
+.spendings-bars-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.spending-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.bar-label {
+  margin-right: 8px;
+}
+
+.bar {
+  height: 20px; /* Adjust the height as needed */
+  background-color: #3498db; /* Example color, you can customize */
 }

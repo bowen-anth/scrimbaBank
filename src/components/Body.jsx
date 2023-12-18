@@ -50,7 +50,7 @@ export default function Body() {
             {/* Accounts Container: Start */}
             <div className="main-container">
 
-                <div className="accounts">
+                <div className="accounts-container">
                     <h2>Accounts</h2>
                     <div className="accounts-item-container">
                         <form id="account-button-form">
@@ -88,8 +88,22 @@ export default function Body() {
              {/* Spendings Container: Start */}
                 <div className="right-container">
                     <div className="spendings-container">
-                        <h2>Spendings</h2>
-
+                        {accounts.map((account) => {
+                            if (account.id === 1) {
+                                return (
+                                    <div key={account.id}>
+                                        <h2>{account.title}</h2>
+                                        {account.spendings.map((spending) => (
+                                            <div key={spending.category} className="spending-bar"> 
+                                                <div className="bar-label">{spending.category}</div> 
+                                                <div className="bar" style={{ width: `${spending.spent}px` }}></div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                )
+                            }
+                            return null;
+                        })}
                     </div>
                 </div>
             </div>
