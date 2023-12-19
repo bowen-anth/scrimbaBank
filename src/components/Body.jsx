@@ -37,9 +37,9 @@ export default function Body() {
                 <div className="button-container">
                     <button>Pay</button> <button>Transfer</button>
                 </div>
-            {/* Accounts Container: Start */}
+            {/* Main Container: Start */}
             <div className="main-container">
-
+                {/* Accounts Container: Start */}
                 <div className="accounts-container">
                     <h2>Accounts</h2>
                     <div className="accounts-item-container">
@@ -80,8 +80,10 @@ export default function Body() {
                 </div>
              {/* Accounts Container: End */}
 
-             {/* Spendings Container: Start */}
+             
                 <div className="right-container">
+                    {/* Spendings Container: Start */}
+                    {selectedState.mainAccount &&
                     <div className="spendings-container">
                         {accounts.map((account) => {
                             if (account.id === 1) {
@@ -104,6 +106,8 @@ export default function Body() {
                             return null;
                         })}
                     </div>
+                    }
+                    {/* Spendings Container: End */}
                 </div>
             </div>
             {/* Main Container: End */}
