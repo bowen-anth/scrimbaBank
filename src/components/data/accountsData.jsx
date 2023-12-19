@@ -52,15 +52,15 @@ export const accounts = [
         savings: [
             {
                 category: "Schwab",
-                saved: "19.99"
+                saved: "20000"
             },
             {
                 category: "Robinhood",
-                saved: "14.99"
+                saved: "1000"
             },
             {
                 category: "BTC",
-                saved: "9.99"
+                saved: "9001"
             }
         ]
     }
