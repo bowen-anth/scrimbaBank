@@ -1,13 +1,12 @@
 import React from "react"
 
-
 export default function Nav() {
     return (
         <>
             <header>
                 <nav className="nav-container">
                     <div className="logo-container">
-                        <img src="../src/assets/bank-logo.svg" /> <h1 className="bestbank-h1">ScrimBank</h1>
+                        <img src="../src/assets/bank-logo.svg" /> <h1 className="scrimbank-h1">ScrimBank</h1>
                     </div>
                     <ul>
                             <li className="home-li">Home</li>

@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 import Nav from "./components/Nav"
-import Main from "./components/Main"
+import Body from "./components/Body"
 
 function App() {
 
   return (
     <>
       <Nav />
-      <Main />
+      <Body />
     </>
   )
 }

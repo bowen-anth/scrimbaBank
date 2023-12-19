@@ -6,7 +6,7 @@
   margin: 1rem 0;
 }
 
-.bestbank-h1 {
+.scrimbank-h1 {
   color: #000;
   font-family: Overpass, sans-serif;
   font-size: 3.75rem;
@@ -47,14 +47,19 @@ font-style: normal;
 font-weight: 700;
 }
 
-nav li {
+.nav-container li {
   list-style-type: none;
+}
+
+.nav-container li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .button-container {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 2rem;
 }
 
 .button-container > button {
@@ -71,4 +76,111 @@ nav li {
   line-height: normal;
   border: 3px solid #111827;
   border-radius: 50px;
+}
+
+.button-container > button:hover {
+  cursor: pointer;
+}
+
+.accounts-container {
+  width: 40%;
+  /* border: 2px solid red; */
+}
+
+.accounts-item-container {
+  display: flex;
+  justify-content: left;
+}
+
+.accounts-spendings-container {
+  display: flex;
+  justify-content: center;
+}
+
+#account-button-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  margin-bottom: 3rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  width: 90%;
+  height: 7.1875rem;
+  flex-shrink: 0;
+  border-radius: 0.9375rem;
+  border: 5px solid #111827;
+  background: #FFF;
+  font-family: Inter;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+input[type="radio"]:checked + label {
+  background: #D1D5DB;
+}
+
+.main-container {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+.right-container {
+  /* justify-content: left; */
+  /* border: 2px solid red; */
+  width: 40%;
+}
+
+/* css for spendings, expenses, savings */
+
+.spendings-bars-container {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.spending-span-container {
+  /* margin-left: 1rem; */
+  margin-bottom: 2px;
+}
+
+.spendings-container h2 {
+  margin-bottom: 1rem;
+}
+
+/* .spending-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+} */
+
+.bar {
+  display: flex;
+  height: 3.0625rem;
+  background-color: #D1D5DB;
+  margin: 0.75rem 0;
+  align-self: center;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.bar > span {
+  margin: 2rem;
 }
