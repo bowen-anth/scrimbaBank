@@ -6,7 +6,7 @@ export default function Nav() {
             <header>
                 <nav className="nav-container">
                     <div className="logo-container">
-                        <img src="../src/assets/bank-logo.svg" /> <h1 className="scrimbank-h1">ScrimBank</h1>
+                        <img src="/bank-logo.svg" /> <h1 className="scrimbank-h1">ScrimBank</h1>
                     </div>
                     <ul>
                             <li className="home-li">Home</li>
